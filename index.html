@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
   <meta name="description" content="My Portfolio Website">
-  <meta name="keywords" content="web design, html, css, js">
-  <title>Portfolio Website</title>
+  <meta name="keywords" content="web design, html, css, js, react, tailwind">
+  <title>Yew Ren</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
           <a class="header__link" href="#about">About</a>
         </li>
         <li>
-          <a class="header__link" href="#featured">Work</a>
+          <a class="header__link" href="#work">Projects</a>
         </li>
         <li>
           <a class="header__link" href="#contact">Contact</a>
@@ -34,7 +34,7 @@
           </button>
         </li>
         <li>
-          <a class="header__resume btn" href="#">Resume</a>
+          <a class="header__resume btn" target="_blank" href="https://www.linkedin.com/in/tanyewren/">LinkedIn</a>
         </li>
       </ul>
       <button aria-label="mobile nav button" class="header__bars">
@@ -54,7 +54,7 @@
           <a href="#about" class="mobile-nav__link">About</a>
         </li>
         <li>
-          <a href="#featured" class="mobile-nav__link">Work</a>
+          <a href="#work" class="mobile-nav__link">Projects</a>
         </li>
         <li>
           <a href="#contact" class="mobile-nav__link">Contact</a>
@@ -69,7 +69,7 @@
           </button>
         </li>
         <li>
-          <a href="" class="mobile-nav__btn btn">Resume</a>
+          <a href="https://www.linkedin.com/in/tanyewren/" target="_blank" class="mobile-nav__btn btn">LinkedIn</a>
         </li>
       </ul>
     </nav>
@@ -77,49 +77,57 @@
   <!-- End of Mobile Navigation -->
   <main>
     <section class="hero container">
-      <img class="hero__img" src="/hero.jpg" alt="Profile picture">
+      <img class="hero__img" src="/profilephoto.jpg" alt="Profile picture">
       <h2 class="hero__subtitle">Hi, I'm Yew Ren</h2>
       <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER</h1>
-      <p class="hero__desc">A passionate <strong>Frontend</strong> web developer and <strong>UI/UX</strong> enthusiast
-        specialized in building
-        stunning pixel-perfect interactive websites.</p>
-      <a class="hero__btn btn" href="#">Reach out</a>
+      <p class="hero__desc">A passionate <strong>Frontend</strong> web developer in Singapore</p>
+      <span>
+        <a class="hero__icon" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/tanyewren/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--clr-slate600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+        <a class="hero__icon" aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/YewRen"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--clr-slate600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+      </span>
+      <a class="hero__btn btn" href="mailto:tanyewren96@gmail.com">Reach out</a>
     </section>
     <section id="about" class="about container section">
       <div class="about__content">
         <h2 class="about__title">About</h2>
-        <p class="about__desc">Hello there! I'm Yew Ren, a <strong>Frontend</strong> web developer in Singapore.
-          I wake up in the morning, grab a cup of timmies coffee, open up
-          my laptop and build things that live on the web all day, everyday.
+        <p class="about__desc">Hey there! I'm Yew Ren, an aspiring <strong>Frontend</strong> web developer in Singapore.
+          I wake up in the morning, grab a cup of teh bing, open up
+          my laptop and build things that live on the web all day.
         </p>
         <p class="about__desc">
-          People who know me say I'm obsessed, that's fair, I am very driven
-          and love learning new things.
-        </p>
-        <p class="about__desc">I recently created a YouTube channel called <a>Slaying The Dragon</a>
-          where I upload videos on front-end web development topics.
+          I am very driven, love learning new things, and am excited to channel my passion in creating visually stunning, pixel-perfect interactive websites.
         </p>
         <hr class="about__hr" />
         <h3 class="about__subtitle">Technologies</h3>
         <div class="about__ul-container">
           <ul class="about__ul">
-            <li class="about__list">JavaScript (ES6+)</li>
-            <li class="about__list">CSS</li>
-            <li class="about__list">HTML</li>
-          </ul>
-          <ul class="about__ul">
-            <li class="about__list">ReactJS</li>
-            <li class="about__list">NextJS</li>
-            <li class="about__list">TailwindCSS</li>
+            <li class="about__list">
+              <img src="https://skillicons.dev/icons?i=js" alt="Javascript Icon">
+            </li>
+            <li class="about__list">
+              <img src="https://skillicons.dev/icons?i=html" alt="HTML Icon">
+            </li>
+            <li class="about__list">
+              <img src="https://skillicons.dev/icons?i=css" alt="CSS Icon">
+            </li>
+            <li class="about__list">
+              <img src="https://skillicons.dev/icons?i=react" alt="React Icon">
+            </li>
+            <li class="about__list">
+              <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind Icon">
+            </li>
+            <li class="about__list">
+              <img src="https://skillicons.dev/icons?i=figma" alt="Figma Icon">
+            </li>
           </ul>
         </div>
       </div>
       <div class="about__img-wrapper">
-        <img class="about__img lazy loading" src="https://fakeimg.pl/384x512" data-src="/hero.jpg" 
+        <img class="about__img lazy loading" src="https://fakeimg.pl/384x512" data-src="/profilephoto2.png" 
         alt="Profile picture">
       </div>
     </section>
-    <section id='featured' class="featured container section">
+    <!-- <section id='featured' class="featured container section">
       <h3 class="featured__subtitle">Featured project</h3>
       <div class="featured__wrapper">
         <h2 class="featured__title">Slaying The Dragon</h2>
@@ -194,114 +202,124 @@
           data-src="/app.png" alt="Slaying The Dragon dashboard">
         </div>
       </div>
-    </section>
-    <section class="work container section">
+    </section> -->
+    <section id="work" class="work container section">
       <h2 class="work__title">Projects</h2>
-      <p class="work__desc">
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur.
-      </p>
       <div class="work__container">
         <!-- Project 1 -->
-        <h3 class="work__project-title">Wax Motif</h3>
+        <h3 class="work__project-title">GCMarkets</h3>
         <div class="work__img-wrapper work__image1">
           <img class="lazy loading" src="https://fakeimg.pl/900"
-          data-src="/waxmoney.png" alt="Wax Motif Website">
+          data-src="/gcmarkets.png" alt="GCMarkets Website">
         </div>
         <div class="work__project work__content1">
-          <h3 class="work__project-subtitle">Wax Motif</h3>
+          <h3 class="work__project-subtitle">GCMarkets</h3>
           <p class="work__project-desc1">
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            GCMarkets is a global broker offering traders access to a full suite of CFDs across FX, Equities, Cryptos, Commodities and Futures.
           </p>
           <p class="work__project-desc2">
-            Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            GCMarkets offers its clients cutting edge trading platforms, low latency connectivity and superior liquidity.
           </p>
-          <a href="#" class="btn work__project-btn">Website</a>
+          <div class="work__logo-container">
+            <div class="work__logo">
+              <div class="work__logo-list">
+                <img src="https://skillicons.dev/icons?i=react" alt="React Icon">
+              </div>
+              <div class="work__logo-list">
+                <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind Icon">
+              </div>
+            </div>
+          </div>
+            <a href="https://forex-broker-website.vercel.app/" target="_blank" class="btn work__project-btn">Website</a>
         </div>
         <!-- Project 2 -->
-        <h3 class="work__project-title">Draze Force</h3>
+        <h3 class="work__project-title">Simply Sumz</h3>
         <div class="work__img-wrapper work__image2">
           <img class="lazy loading" src="https://fakeimg.pl/900"
-          data-src="/drazeforce.png" alt="Draze Force Website">
+          data-src="/simplysumz.png" alt="Simply Sumz Website">
         </div>
         <div class="work__project work__content2">
-          <h3 class="work__project-subtitle">Draze Force</h3>
+          <h3 class="work__project-subtitle">Simply Sumz</h3>
           <p class="work__project-desc1">
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            Enhance your reading experience with Simply Summize, an open-source article summarizer designed to condense lengthy articles into succinct and comprehensible summaries.
           </p>
-          <p class="work__project-desc2">
-            Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <a href="#" class="btn work__project-btn">Website</a>
+          <div class="work__logo-container">
+            <div class="work__logo">
+              <div class="work__logo-list">
+                <img src="https://skillicons.dev/icons?i=react" alt="React Icon">
+              </div>
+              <div class="work__logo-list">
+                <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind Icon">
+              </div>
+              <div class="work__logo-list">
+                <img src="https://skillicons.dev/icons?i=redux" alt="Redux Icon">
+              </div>
+            </div>
+          </div>
+          <a href="https://article-summarizer-mu.vercel.app/" target="_blank" class="btn work__project-btn">Website</a>
         </div>
         <!-- Project 3 -->
-        <h3 class="work__project-title">Artren</h3>
+        <h3 class="work__project-title">RFP Mockup for IBKR</h3>
         <div class="work__img-wrapper work__image3">
           <img class="lazy loading" src="https://fakeimg.pl/900"
-          data-src="/artren.png" alt="Artren Website">
+          data-src="/IBKR.png" alt="Interactive Brokers">
         </div>
         <div class="work__project work__content3">
-          <h3 class="work__project-subtitle">Artren</h3>
+          <h3 class="work__project-subtitle">IBKR RFP Mock-up</h3>
           <p class="work__project-desc1">
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            The SushiPayy mobile application revolutionizes the dining experience for sushi enthusiasts by seamlessly integrating payment options directly into their sushi restaurant visits.
           </p>
           <p class="work__project-desc2">
-            Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            With SushiPayy, users can effortlessly settle their bills post-meal, eliminating the need to wait in long in-store payment queues.
           </p>
-          <a href="#" class="btn work__project-btn">Website</a>
+          <div class="work__logo-container">
+            <div class="work__logo">
+              <div class="work__logo-list">
+                <a target="_blank" href="https://ibkr-mockup.vercel.app/">
+                  <img src="/marvelapp.png" alt="Marvelapp Icon">
+                </a>
+              </div>
+            </div>
+          </div>
+          <a target="_blank" class="btn work__project-btn" href="https://ibkr-mockup.vercel.app/">Prototype</a>
         </div>
         <!-- Project 4 -->
-        <h3 class="work__project-title">Platform Pro</h3>
+        <h3 class="work__project-title">SushiPayy</h3>
         <div class="work__img-wrapper work__image4">
           <img class="lazy loading" src="https://fakeimg.pl/900"
-          data-src="/platformpro.png" alt="Platform Pro Website">
+          data-src="/sushipayy.png" alt="SushiPayy Mockup">
+          <!-- <div class="work__img-wrappericon">
+            <svg class="work__img-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.97.97a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1-1.06 1.06l-1.72-1.72v3.44h-1.5V3.31L8.03 5.03a.75.75 0 0 1-1.06-1.06l3-3ZM9.75 6.75v6a.75.75 0 0 0 1.5 0v-6h3a3 3 0 0 1 3 3v7.5a3 3 0 0 1-3 3h-7.5a3 3 0 0 1-3-3v-7.5a3 3 0 0 1 3-3h3Z" />
+              <path d="M7.151 21.75a2.999 2.999 0 0 0 2.599 1.5h7.5a3 3 0 0 0 3-3v-7.5c0-1.11-.603-2.08-1.5-2.599v7.099a4.5 4.5 0 0 1-4.5 4.5H7.151Z" />
+            </svg>
+          </div> -->
         </div>
         <div class="work__project work__content4">
-          <h3 class="work__project-subtitle">Platform Pro</h3>
+          <h3 class="work__project-subtitle">SushiPayy</h3>
           <p class="work__project-desc1">
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            The SushiPayy mobile application revolutionizes the dining experience for sushi enthusiasts by seamlessly integrating payment options directly into their sushi restaurant visits.
           </p>
           <p class="work__project-desc2">
-            Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            With SushiPayy, users can effortlessly settle their bills post-meal, eliminating the need to wait in long in-store payment queues.
           </p>
-          <a href="#" class="btn work__project-btn">Website</a>
+          <div class="work__logo-container">
+            <div class="work__logo">
+              <div class="work__logo-list">
+                <img src="https://skillicons.dev/icons?i=figma" alt="Figma Icon">
+              </div>
+            </div>
+          </div>
+          <a target="_blank" href="https://www.figma.com/proto/gNab4BSofigw5YHLkTPIpA/SushiPayy-prototype?type=design&node-id=202-701&t=WrZt4sCFnppS6UWo-1&scaling=scale-down&page-id=102%3A426&starting-point-node-id=202%3A701&mode=design" class="btn work__project-btn">Prototype</a>
         </div>
         <!-- Project 5 -->
-        <h3 class="work__project-title">Wallys Vegan</h3>
+        <!-- <h3 class="work__project-title">Salesforce Sharepoint Site</h3>
         <div class="work__img-wrapper work__image5">
           <img class="lazy loading" src="https://fakeimg.pl/900"
-          data-src="/wallysvegan.png" alt="Wallys Vegan Website">
+          data-src="https://fakeimg.pl/900" alt="Wallys Vegan Website">
         </div>
         <div class="work__project work__content5">
-          <h3 class="work__project-subtitle">Wallys Vegan</h3>
+          <h3 class="work__project-subtitle">Salesforce Sharepoint Site</h3>
           <p class="work__project-desc1">
             Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -314,37 +332,20 @@
             dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
             sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
+          <div class="work__logo-container">
+            <div class="work__logo">
+              <div class="work__logo-list">
+                <img src="/sharepoint.png" alt="Sharepoint Icon">
+              </div>
+            </div>
+          </div>
           <a href="#" class="btn work__project-btn">Website</a>
-        </div>
-        <!-- Project 6 -->
-        <h3 class="work__project-title">Old Portfolio</h3>
-        <div class="work__img-wrapper work__image6">
-          <img class="lazy loading" src="https://fakeimg.pl/900"
-          data-src="/portfolio.png" alt="Portfolio Website">
-        </div>
-        <div class="work__project work__content6">
-          <h3 class="work__project-subtitle">Old Portfolio</h3>
-          <p class="work__project-desc1">
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-          <p class="work__project-desc2">
-            Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <a href="#" class="btn work__project-btn">Website</a>
-        </div>
+        </div> -->
       </div>
     </section>
     <section id='contact' class="contact container section">
       <h2 class="contact__title">Get In Contact</h2>
-      <p class="contact__desc">Whether you are starting a project, have business inquiries
-        or just want to say hi, my inbox is always open so feel free to reach out and I will
-        get back to you as soon as possible.
+      <p class="contact__desc">My inbox is always open so feel free to reach out and I will get back to you as soon as possible.
       </p>
       <a href="mailto:tanyewren96@gmail.com" class="contact__btn btn" target="_blank">Reach Out</a>
     </section>

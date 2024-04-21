@@ -5,13 +5,35 @@
 .work__title {
     font-size: var(--size-2xl);
     color: var(--clr-light);
+    margin-bottom: 3rem;
 }
 
-.work__desc {
+/* .work__desc {
     max-width: 60ch;
     font-size: var(--size-sm);
     color: var(--clr-slate600);
     margin: 1rem auto;
+} */
+
+.work__logo-container {
+    margin-bottom: 1.5rem;
+}
+
+.work__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.work__logo-list {
+    width: 38px;
+    height: 38px;
+    border-radius: 30px;
+}
+
+.work__logo-list img {
+    border-radius: 25%;
 }
 
 .work__project-title {
@@ -23,9 +45,32 @@
     position: relative;
 }
 
+.work__img-wrapper img {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* .work__img-wrappericon {
+    position: relative;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    top: -50%;
+    left: 0;
+    z-index: 2;
+}
+
+.work__img-icon {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    z-index: 3;
+    display: flex;
+    text-align: center;
+} */
+
 .work__img-wrapper::after {
     content: '';
-    background-color: rgba(79, 70, 229, 0.4);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -37,6 +82,7 @@
 
 .work__img-wrapper:hover::after {
     background-color: rgba(79, 70, 229, 0.3);
+    cursor: pointer;
 }
 
 .work__project:not(:last-child) {
@@ -45,7 +91,7 @@
 
 .work__project-desc1 {
     font-size: var(--size-sm);
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     margin: 1rem 0;
 }
 
@@ -59,7 +105,7 @@
     font-size: var(--size-sm);
 }
 
-.work__proect-subtitle {
+.work__project-subtitle {
     display: none;
 }
 
@@ -69,10 +115,10 @@
         font-size: var(--size-3xl);
     }
     
-    .work__desc {
+    /* .work__desc {
         font-size: var(--size-base);
         margin: 1.5rem auto;
-    }
+    } */
 
     .work__project-title {
         font-size: var(--size-lg);
@@ -107,6 +153,7 @@
         'image5 content5'
         'content6 image6';
         place-items: center;
+        row-gap: 1.5rem;
     }
 
     .work__image1 {
@@ -214,9 +261,9 @@
         font-size: var(--size-4xl);
     }
     
-    .work__desc {
+    /* .work__desc {
         font-size: var(--size-lg);
-    }
+    } */
 
     .work__project-desc1 {
         font-size: var(--size-base);
@@ -241,10 +288,10 @@
         font-size: var(--size-5xl);
     }
     
-    .work__desc {
+    /* .work__desc {
         font-size: var(--size-xl);
         margin: 2rem auto;
-    }
+    } */
 
     .work__project-desc1 {
         font-size: var(--size-lg);

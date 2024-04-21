@@ -15,7 +15,7 @@
 }
 
 .hero__subtitle {
-    color: var(--clr-slate800);
+    color: var(--clr-slate400);
     font-size: var(--size-base);
     line-height: 0.9;
 }
@@ -31,12 +31,23 @@
 .hero__desc {
     max-width: 60ch;
     font-size: var(--size-sm);
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
 }
 
 .hero__btn {
     text-transform: capitalize;
     font-size: var(--size-sm);
+}
+
+.hero span {
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.hero__icon:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
 }
 
 /* xs */
